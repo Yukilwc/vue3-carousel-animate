@@ -3,8 +3,11 @@
 </template>
 
 <script lang='ts'>
+import { DateTime } from "../utils/tool";
 export default {
-  setup(props, context) {},
+  setup(props, context) {
+    DateTime.format();
+  },
 };
 </script>
 
