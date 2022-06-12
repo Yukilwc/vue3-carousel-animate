@@ -1,13 +1,29 @@
 {
-  "name": "vite-project",
+  "name": "vue3-carousel-animate",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/vue3-carousel-animate.es.ts",
+  "main": "./dist/vue3-carousel-animate.umd.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-carousel-animate.es.ts",
+      "require": "./dist/vue3-carousel-animate.umd.ts"
+    }
+  },
+  "keywords": [
+    "vue3",
+    "carousel"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^17.0.42",
     "sass": "^1.52.3",
     "vue": "^3.2.25"
   },
