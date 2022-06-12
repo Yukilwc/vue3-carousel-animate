@@ -8,13 +8,7 @@
       <div class='comp-container'>
         <MisakaCarousel ref="carouselRef1" :additionalSlides="2" :itemRight="'20px'" :speed="10000" offset="300px"
           :reverse="false" mode="fps">
-          <div class='image-list'>
-            <div class="item" v-for='(item, index) in 6' :key='index'>
-              <img class='image ignore-zoom' :src="getImage(index)" />
-            </div>
-
-          </div>
-          <!-- <div class='' @click="textClick">一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字2233</div> -->
+          <div class='' @click="textClick">一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字2233</div>
         </MisakaCarousel>
 
       </div>

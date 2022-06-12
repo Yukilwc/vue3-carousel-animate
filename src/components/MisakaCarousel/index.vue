@@ -105,6 +105,12 @@ defineExpose({
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+
+  }
 
   .misaka-carousel-wrapper {
     white-space: nowrap;
