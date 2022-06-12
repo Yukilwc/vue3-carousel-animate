@@ -1,5 +1,4 @@
 // js帧动画过渡方案
-import { is } from "dom7";
 import { ref, Ref } from "vue";
 import { IComputedSize, IWrapperStyle } from "./useSize";
 class FPSAnimate {
@@ -8,14 +7,14 @@ class FPSAnimate {
   totalTime = 3000;
   x = 0;
   currentTime = 0;
-  startTime = undefined;
+  startTime: number | undefined = undefined;
   isActive = false;
   // isPause = false;
   callback = (x: number) => {};
   animate = async () => {
     this.isActive = true;
     return new Promise(async (resolve, reject) => {
-      const step = async (timestamp) => {
+      const step = async (timestamp: number) => {
         if (this.isActive === false) {
           console.log("==========FPSAnimate is set isAnimating finished");
           reject(this.x);
