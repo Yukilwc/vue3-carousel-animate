@@ -33,20 +33,20 @@
 import { onMounted, ref, toRaw } from "vue";
 import MisakaCarousel from './MisakaCarousel/index.vue'
 
-const getImage = (index) => {
-  return new URL(`../images/${index}.png`, import.meta.url).href
-}
-const carouselRef1 = ref<InstanceType<typeof MisakaCarousel>>(null)
+// const getImage = (index) => {
+//   return new URL(`../images/${index}.png`, import.meta.url).href
+// }
+const carouselRef1 = ref<InstanceType<typeof MisakaCarousel>>()
 // const carouselRef2 = ref<InstanceType<typeof MisakaCarousel>>(null)
 const start = () => {
   console.log('==========carouselRef1', toRaw(carouselRef1))
-  carouselRef1.value.start()
+  carouselRef1.value?.start()
   // carouselRef2.value.start()
 }
 const isPause = ref(false)
 const pause = () => {
   isPause.value = !isPause.value
-  carouselRef1.value.pause(isPause.value)
+  carouselRef1.value?.pause(isPause.value)
   // carouselRef2.value.start()
 }
 const textClick = () => {
