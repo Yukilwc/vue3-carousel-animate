@@ -93,14 +93,7 @@ class FPSAnimate {
         window.requestAnimationFrame(step);
       });
     });
-    __publicField(this, "init", ({
-      x0 = 0,
-      x1 = 300,
-      totalTime = 3e3,
-      x = 0,
-      currentTime = 0,
-      startTime = void 0
-    }) => {
+    __publicField(this, "init", ({ x0 = 0, x1 = 300, totalTime = 3e3, x = 0, currentTime = 0, startTime = void 0 }) => {
       this.x0 = x0;
       this.x1 = x1;
       this.totalTime = totalTime;

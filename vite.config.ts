@@ -5,7 +5,7 @@ import typescript2 from "rollup-plugin-typescript2";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), typescript2()],
+  plugins: [vue(), typescript2({ check: false })],
   build: {
     lib: {
       entry: resolve(__dirname, "src/components/main.ts"),
