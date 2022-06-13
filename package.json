@@ -1,10 +1,11 @@
 {
   "name": "vue3-carousel-animate",
   "private": false,
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.2-alpha.1",
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "dist_types"
   ],
   "module": "./dist/vue3-carousel-animate.es.js",
   "main": "./dist/vue3-carousel-animate.umd.js",
