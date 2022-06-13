@@ -87,6 +87,11 @@ export const useFPSCarousel = (
     if (ani.isActive) {
       ani.isActive = false;
     }
+    if (reverse.value) {
+      reverseStart()
+      return;
+    }
+
     ani = new FPSAnimate();
     if (computedSize.value.offsetPx <= 0) {
       doLoop();
@@ -165,6 +170,9 @@ export const useFPSCarousel = (
     console.log("==========end ani");
     doLoop();
   };
+  const reverseStart = async ()=>{
+
+  }
   return {
     start,
     pause,
