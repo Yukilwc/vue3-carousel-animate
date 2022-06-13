@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/components/main.ts"),
       name: "vue3-carousel-animate",
-      fileName: (format) => `vue3-carousel-animate.${format}.ts`,
+      fileName: (format) => `vue3-carousel-animate.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
