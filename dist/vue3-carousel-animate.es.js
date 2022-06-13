@@ -239,7 +239,7 @@ const useSize = (offset, additionalSlides, reverse) => {
   };
   return { wrapperStyle, calcAllSize, resetWrapperStyle, computedSize };
 };
-var index_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".misaka-carousel-container[data-v-0707d3bf]{width:100%;overflow:hidden;white-space:nowrap;position:relative;box-sizing:border-box}.misaka-carousel-container *[data-v-0707d3bf]{box-sizing:border-box}.misaka-carousel-container .misaka-carousel-wrapper[data-v-0707d3bf]{white-space:nowrap;width:auto;display:flex;flex-wrap:nowrap;position:relative;position:absolute;top:0px}.misaka-carousel-container .misaka-carousel-wrapper .misaka-carousel-item[data-v-0707d3bf]{flex:0 0 auto}\n")();
+var index_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".misaka-carousel-container[data-v-df0a0afa]{width:100%;overflow:hidden;white-space:nowrap;position:relative;box-sizing:border-box}.misaka-carousel-container *[data-v-df0a0afa]{box-sizing:border-box}.misaka-carousel-container .misaka-carousel-wrapper[data-v-df0a0afa]{white-space:nowrap;width:auto;display:flex;flex-wrap:nowrap;position:relative;position:absolute;top:0px}.misaka-carousel-container .misaka-carousel-wrapper .misaka-carousel-item[data-v-df0a0afa]{flex:0 0 auto}\n")();
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -345,5 +345,5 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-0707d3bf"]]);
-export { index as MisakaCarousel };
+var index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-df0a0afa"]]);
+export { index as Vue3CarouselAnimate };
