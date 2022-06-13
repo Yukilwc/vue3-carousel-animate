@@ -88,6 +88,10 @@ export const useFPSCarousel = (
       ani.isActive = false;
     }
     ani = new FPSAnimate();
+    if(computedSize.value.offsetPx<=0) {
+      doLoop()
+      return
+    }
     ani.init({
       x0: 0,
       x1: -computedSize.value.offsetPx,
@@ -96,17 +100,14 @@ export const useFPSCarousel = (
         (computedSize.value.offsetPx / computedSize.value.itemWidth),
     });
     ani.callback = (x) => {
-      // console.log("==========ani callback", x);
       wrapperStyle.value.transform = `translateX(${x}px)`;
     };
-    console.log("==========start ani", ani);
     try {
       await ani.animate();
     } catch (e) {
       console.log("==========动画强制停止", e);
       return;
     }
-    console.log("==========end ani");
     doLoop();
   };
   const doLoop = async () => {

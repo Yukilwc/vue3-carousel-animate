@@ -41,9 +41,6 @@ import "vue3-carousel-animate/dist/style.css"
 
 开始循环时的偏移值,即最开始距离容器左边缘的距离,string类型，支持px，vw，百分比等
 
-### reverse
-
-是否开启反向运动。注意，当开启时，offset会变成距离容器右边缘的距离。
 ### mode
 
 可选值为 `css`和`fps`.  
