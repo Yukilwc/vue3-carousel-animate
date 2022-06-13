@@ -1,9 +1,7 @@
 name: Publish Package to npmjs
 on:
-  # release:
-  #   types: [created]
-  push:
-    branches: [master, main]
+  release:
+    types: [created]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,7 +21,7 @@ jobs:
             **/node_modules
           key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            ${{ runner.os }}-npm-
 
       # install dependencies if the cache did not hit
       - name: Install dependencies
