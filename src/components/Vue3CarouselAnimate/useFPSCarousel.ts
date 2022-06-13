@@ -76,21 +76,21 @@ class FPSAnimate {
     });
   };
 }
-let ani = new FPSAnimate();
 export const useFPSCarousel = (
   wrapperStyle: Ref<IWrapperStyle>,
   computedSize: Ref<IComputedSize>,
   speed: Ref<number>,
   reverse: Ref<boolean>
 ) => {
+  let ani = new FPSAnimate();
   const start = async () => {
     if (ani.isActive) {
       ani.isActive = false;
     }
     ani = new FPSAnimate();
-    if(computedSize.value.offsetPx<=0) {
-      doLoop()
-      return
+    if (computedSize.value.offsetPx <= 0) {
+      doLoop();
+      return;
     }
     ani.init({
       x0: 0,

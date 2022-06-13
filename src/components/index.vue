@@ -6,16 +6,17 @@
   <div class="carousel-container">
     <div class='carousel-wrapper'>
       <div class='comp-container'>
-        <!-- <Vue3CarouselAnimate ref="carouselRef1" :additionalSlides="2" :itemRight="'20px'" :speed="10000" offset="300px"
+        <Vue3CarouselAnimate ref="carouselRef1" :additionalSlides="2" :itemRight="'20px'" :speed="10000" offset="300px"
           :reverse="false" mode="fps">
           <div class='' @click="textClick">一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字2233</div>
-        </Vue3CarouselAnimate> -->
+        </Vue3CarouselAnimate>
 
       </div>
       <div class=''>常规方向</div>
       <div class='mt10'>反转方向</div>
       <div class='comp-container'>
         <Vue3CarouselAnimate ref="carouselRef2" :additionalSlides="2" :itemRight="'20px'" :speed="10000" mode="fps"
+        :reverse="true"
          >
           <div class='' @click="textClick">一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字2233</div>
         </Vue3CarouselAnimate>
