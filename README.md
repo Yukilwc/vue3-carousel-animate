@@ -4,6 +4,12 @@
 
 [Demo](https://yukilwc.github.io/InclusiveLibrary/Frontend/Awesome-Design/Carousel/Demo.html)
 
+## 安装
+
+```sh
+npm install vue3-carousel-animate
+```
+
 ## 基础使用
 
 ```vue
