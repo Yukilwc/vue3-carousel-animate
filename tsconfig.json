@@ -11,12 +11,13 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types":["node"],
+    "types": ["node"],
     "skipLibCheck": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "declaration": true,
     "declarationDir": "./dist/types/",
-    "declarationMap": false
+    "declarationMap": false,
+    "outDir": "./dist/types/"
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }],

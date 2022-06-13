@@ -13,6 +13,7 @@
       "require": "./dist/vue3-carousel-animate.umd.js"
     }
   },
+  "typings": "./dist/types/main.d.ts",
   "keywords": [
     "vue3",
     "carousel"
