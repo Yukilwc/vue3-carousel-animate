@@ -13,6 +13,10 @@
     ".": {
       "import": "./dist/vue3-carousel-animate.es.js",
       "require": "./dist/vue3-carousel-animate.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "typings": "./dist_types/components/main.d.ts",
