@@ -5,12 +5,12 @@
   "files": [
     "dist"
   ],
-  "module": "./dist/vue3-carousel-animate.es.ts",
-  "main": "./dist/vue3-carousel-animate.umd.ts",
+  "module": "./dist/vue3-carousel-animate.es.js",
+  "main": "./dist/vue3-carousel-animate.umd.js",
   "exports": {
     ".": {
-      "import": "./dist/vue3-carousel-animate.es.ts",
-      "require": "./dist/vue3-carousel-animate.umd.ts"
+      "import": "./dist/vue3-carousel-animate.es.js",
+      "require": "./dist/vue3-carousel-animate.umd.js"
     }
   },
   "keywords": [

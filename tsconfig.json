@@ -13,7 +13,10 @@
     "lib": ["esnext", "dom"],
     "types":["node"],
     "skipLibCheck": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationDir": "./dist/types/",
+    "declarationMap": false
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }],
