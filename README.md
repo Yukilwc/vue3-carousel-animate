@@ -7,10 +7,10 @@
 ## API
 
 ```vue
- <MisakaCarousel ref="carouselRef1" :additionalSlides="2" :itemRight="'20px'" :speed="10000" offset="300px"
+ <Vue3CarouselAnimate ref="carouselRef1" :additionalSlides="2" :itemRight="'20px'" :speed="10000" offset="300px"
           :reverse="false" mode="fps">
           <div>走马灯文字</div>
-</MisakaCarousel>
+</Vue3CarouselAnimate>
 ```
 
 |     |     |     |

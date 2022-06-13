@@ -6,15 +6,15 @@
   <div class="carousel-container">
     <div class='carousel-wrapper'>
       <div class='comp-container'>
-        <MisakaCarousel ref="carouselRef1" :additionalSlides="2" :itemRight="'20px'" :speed="10000" offset="300px"
+        <Vue3CarouselAnimate ref="carouselRef1" :additionalSlides="2" :itemRight="'20px'" :speed="10000" offset="300px"
           :reverse="false" mode="fps">
           <div class='' @click="textClick">一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字2233</div>
-        </MisakaCarousel>
+        </Vue3CarouselAnimate>
 
       </div>
       <div class=''>常规方向</div>
       <div class='comp-container'>
-        <!-- <MisakaCarousel ref="carouselRef2" :additionalSlides="2" :itemRight="'20px'" :speed="10000" 
+        <!-- <Vue3CarouselAnimate ref="carouselRef2" :additionalSlides="2" :itemRight="'20px'" :speed="10000" 
           :reverse="true">
           <div class='image-list'>
             <div class="item" v-for='(item, index) in 6' :key='index'>
@@ -22,7 +22,7 @@
             </div>
 
           </div>
-        </MisakaCarousel> -->
+        </Vue3CarouselAnimate> -->
       </div>
       <div class=''>反转方向</div>
     </div>
@@ -31,13 +31,13 @@
 
 <script lang='ts' setup>
 import { onMounted, ref, toRaw } from "vue";
-import MisakaCarousel from './MisakaCarousel/index.vue'
+import Vue3CarouselAnimate from './Vue3CarouselAnimate/index.vue'
 
 // const getImage = (index) => {
 //   return new URL(`../images/${index}.png`, import.meta.url).href
 // }
-const carouselRef1 = ref<InstanceType<typeof MisakaCarousel>>()
-// const carouselRef2 = ref<InstanceType<typeof MisakaCarousel>>(null)
+const carouselRef1 = ref<InstanceType<typeof Vue3CarouselAnimate>>()
+// const carouselRef2 = ref<InstanceType<typeof Vue3CarouselAnimate>>(null)
 const start = () => {
   console.log('==========carouselRef1', toRaw(carouselRef1))
   carouselRef1.value?.start()
