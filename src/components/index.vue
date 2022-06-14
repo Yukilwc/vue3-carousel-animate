@@ -16,9 +16,10 @@
       <div class='mt10'>反转方向</div>
       <div class='comp-container'>
         <Vue3CarouselAnimate ref="carouselRef2" :additionalSlides="2" :itemRight="'20px'" :speed="10000" mode="fps"
-        :reverse="false"
+        offset="50px"
+        :reverse="true"
          >
-          <div class='' @click="textClick">一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字2233</div>
+          <div class='' @click="textClick">一段一段文字一段文字一段文字一段文字2233</div>
         </Vue3CarouselAnimate>
       </div>
 
